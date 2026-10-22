@@ -1,0 +1,25 @@
+# Projeto Integrado em Ciencia de Dados (ECD-108) - PPGMCS/UNIMONTES
+# Samuel Rodrigues Goncalves
+#
+# Versoes fixadas para reprodutibilidade. Testado em Python 3.13.
+# Reproducao completa:
+#   pip install -r requirements.txt
+#   python scripts/preparar_dados.py     # baixa os CSV do HAI e gera data/processed
+#   streamlit run app/app.py
+
+# --- nucleo (Modulos 2 e 3) ---
+pandas==3.0.2
+numpy==2.4.4
+matplotlib==3.10.9
+scikit-learn==1.8.0
+
+# --- leitura dos dados preparados ---
+pyarrow==26.0.0
+
+# --- interpretabilidade e dashboard (Modulo 4) ---
+shap==0.54.1
+streamlit==1.66.0
+
+# --- cadernos ---
+jupyter==1.1.1
+nbformat==5.11.1

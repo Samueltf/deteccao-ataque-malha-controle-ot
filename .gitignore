@@ -1,0 +1,28 @@
+# Dados brutos: ~800 MB, licenca CC BY-SA 4.0, baixados sob demanda
+# por scripts/preparar_dados.py. Nao versionar.
+data/raw/*
+!data/raw/.gitkeep
+
+# Dados preparados: o recorte leve que o dashboard consome (~4,4 MB) E versionado,
+# para que `streamlit run app/app.py` funcione sem baixar os 800 MB de CSV.
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/*.parquet
+!data/processed/meta.json
+
+# Credenciais e configuracao local
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+
+# Rascunhos e saidas descartadas durante o desenvolvimento
+_descartado*/
